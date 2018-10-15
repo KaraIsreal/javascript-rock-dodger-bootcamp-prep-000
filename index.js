@@ -16,7 +16,7 @@ var gameInterval = null
  * Be aware of what's above this line,
  * but all of your work should happen below.
  */
- 
+
 
  function checkCollision(rock) {
    // implement me!
@@ -28,8 +28,8 @@ var gameInterval = null
 
      const rockLeftEdge = positionToInteger(rock.style.left)
      const rockRightEdge = rockLeftEdge + 20;
-     
-     if (((rockLeftEdge < dodgerLeftEdge) && (rockRightEdge >= dodgerLeftEdge)) || 
+
+     if (((rockLeftEdge < dodgerLeftEdge) && (rockRightEdge >= dodgerLeftEdge)) ||
      ((rockLeftEdge >= dodgerLeftEdge) && (rockRightEdge <= dodgerRightEdge)) ||
      ((rockLeftEdge <= dodgerRightEdge) && (rockRightEdge > dodgerRightEdge))
       ) {
@@ -79,7 +79,7 @@ var gameInterval = null
         top = top + 4;
         rock.style.top = `${top}px`;
 
-      } 
+      }
 
      /**
       * But if the rock *has* reached the bottom of the GAME,
